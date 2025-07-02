@@ -145,7 +145,8 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3001",
+    "http://localhost:3001",  # for local dev
+    "https://social-backend-c8wl.onrender.com",  # replace with your real Render frontend URL
 ]
 
 ALLOWED_HOSTS = ['*']
