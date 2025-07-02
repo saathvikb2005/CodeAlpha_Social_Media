@@ -14,6 +14,9 @@ from .views import (
     FollowToggleView,
 )
 
+from django.http import JsonResponse
+from django.urls import path
+
 urlpatterns = [
     path('register/', RegisterView.as_view(), name='register'),
     path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
@@ -31,4 +34,5 @@ from .views import user_list
 
 urlpatterns += [
     path('users/', user_list, name='user-list'),
+    path("", lambda request: JsonResponse({"message": "Social backend is running ✅"})),
 ]
