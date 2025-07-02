@@ -1,0 +1,90 @@
+/* CreatePostPage.css */
+.create-post-page {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px 24px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.create-post-page h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 1.8rem;
+  color: #222;
+  font-weight: 600;
+}
+
+.create-post-page form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.create-post-page input[type="text"],
+.create-post-page input[type="file"] {
+  padding: 14px 16px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+  transition: border-color 0.2s ease;
+}
+
+.create-post-page input[type="text"]:focus,
+.create-post-page input[type="file"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.create-post-page button {
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: #fff;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.create-post-page button:hover {
+  background: linear-gradient(135deg, #006ae0, #00b0e6);
+}
+
+.create-post-page p {
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-top: -10px;
+}
+
+/* Success and error messages */
+.create-post-page p[style*="green"] {
+  color: #2e7d32;
+}
+
+.create-post-page p[style*="red"] {
+  color: #c62828;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .create-post-page {
+    margin: 20px 12px;
+    padding: 20px 16px;
+    border-radius: 12px;
+  }
+
+  .create-post-page h2 {
+    font-size: 1.5rem;
+  }
+
+  .create-post-page button {
+    font-size: 0.95rem;
+    padding: 12px;
+  }
+}
